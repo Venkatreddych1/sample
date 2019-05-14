@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table border="1">
+<tr >
+    <th>email</th>
+  <th>user</th>
+  <th>pwd</th>
+  <th>fname</th>
+    <th>lname</th>
+    <th>date</th>
+
+</tr>
+{% for rec in records %}
+<tr>
+   <td>{{ rec.email }}</td>
+  <td>{{ rec.user}}</td>
+  <td>{{ rec.pwd}}</td>
+  <td>{{ rec.fname }}</td>
+  <td>{{ rec.lname }}</td>
+   <td>{{ rec.date }}</td>
+
+
+</tr>
+    {% endfor %}
+</table>
+<a href="./reg">clck here to insert another user</a>
+</body>
+</html>
