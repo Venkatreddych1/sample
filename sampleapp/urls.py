@@ -1,6 +1,6 @@
 from django.conf.urls import url
 from . import views
-app_name = 'bookapp'
+app_name = 'sampleapp'
 urlpatterns = [
     url(r'^$',views.home,name='home'),
     url(r'^reg$', views.reg,name='reg'),

@@ -20,8 +20,8 @@ from django.conf import settings
 from django.conf.urls import url,include
 
 urlpatterns = [
-    #path(r'^admin/', admin.site.urls),
-    url(r'^hello/',include('bookapp.urls')),
+    path(r'^admin/', admin.site.urls),
+    url(r'^hello/',include('sampleapp.urls')),
 
 
 ]
