@@ -8,3 +8,5 @@ class Reg(models.Model):
     fname=models.CharField(max_length=10)
     lname=models.CharField(max_length=10)
     date=models.DateTimeField(default=datetime.now,blank=True)
+    file=models.FileField()
+    comment=models.CharField(max_length=200)

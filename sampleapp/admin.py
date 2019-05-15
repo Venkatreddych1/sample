@@ -1,3 +1,11 @@
 from django.contrib import admin
+from .models import Reg
 
-# Register your models here.
+class Sample(admin.ModelAdmin):
+      list_display = ['file','comment']
+
+
+
+admin.site.register(Reg,Sample)
+
+

@@ -38,4 +38,4 @@ def display(request):
 
 def myview(request):
     f = request.FILES['sentFile']
-    print(f.name)
+    return HttpResponse(f)

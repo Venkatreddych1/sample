@@ -8,5 +8,3 @@ class RegForm(forms.ModelForm):
 class LoginForm(forms.Form):
     email = forms.CharField(max_length=20)
     pwd = forms.CharField(widget=forms.PasswordInput())
-
-
