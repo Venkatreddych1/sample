@@ -8,5 +8,6 @@ class Reg(models.Model):
     fname=models.CharField(max_length=30)
     lname=models.CharField(max_length=30)
     date=models.DateTimeField(default=datetime.now,blank=True)
+    location=models.PointField()
     file=models.FileField()
-    comment=models.CharField(max_length=200)
+    comment=models.TextField()

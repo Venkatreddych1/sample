@@ -3,6 +3,8 @@ from django.http import HttpResponse
 from .models import Reg
 from .forms import LoginForm
 from .forms import RegForm
+import time
+import threading
 def reg(request):
         if request.method == 'POST':
           form = RegForm(request.POST)
@@ -39,3 +41,6 @@ def display(request):
 def myview(request):
     f = request.FILES['sentFile']
     return HttpResponse(f)
+
+
+
